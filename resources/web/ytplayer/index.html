@@ -24,15 +24,19 @@
     <meta charset="utf-8">
     <!-- Page title -->
     <title>PhantomBot YouTube Player</title>
-    <!-- Load Bootstrap 4.0 -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
-    <!-- Load Fontawesome 5.0.4 -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.4/css/all.css">
-    <!-- Bootstrap sliders 10.0.0 -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.0.0/css/bootstrap-slider.min.css">
-    <!-- Toast notifications v2.1.3 -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
+    <!-- Load Bootstrap -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.8/css/bootstrap.min.css" integrity="sha512-2bBQCjcnw658Lho4nlXJcc6WkV/UxpE/sAokbXPxQNGqmNdQrWqtw26Ns9kFF/yG792pKR1Sx8/Y1Lf1XN4GKA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Load Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Bootstrap sliders -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-sliders/1.0.1/bootstrap-slider.dark.min.css" integrity="sha512-95UHziZVLw8oXU4fEsSPr+IYaIURWJPabATXa1VriKipd8W3BIpATsgDU4kSsHv/Exnhfv2A2C/tBNMESWB5Gw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Toast notifications-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.4/toastr.min.css" integrity="sha512-6S2HWzVFxruDlZxI3sXOZZ4/eJ8AcxkQH1+JjSe/ONCEqR9L4Ysq5JdT5ipqtzU7WHalNwzwBv+iE51gNHJNqQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Load our styles -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" integrity="sha512-nMNlpuaDPrqlEls3IX/Q56H36qvBASwb3ipuo3MxeWbsQB1881ox0cRv7UPTgBlriqoynt35KjEwgGUeUXIPnw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/admin-lte/2.4.18/css/AdminLTE.min.css" integrity="sha512-SvzDTeVjcacK3/Re22K/cLJonaRQAOv5rJ58s8A5xIxhPTZLhQH5NOg2wziR8jWI14We8HHs5jEih2OkUW5Kfw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/admin-lte/2.4.18/css/skins/skin-purple.min.css" integrity="sha512-tpA9URQuPiYqOoT2SchwtU/Q23iHaJPwQkzEOHBgf2QOgsQJhhOlUrEGKJJ/Oj2pELXJqULMKyDpPVB5bZBqow==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../common/css/main.min.css">
     <link rel="stylesheet" href="/ytplayer/css/style.css">
     <!-- Load Google fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
@@ -204,16 +208,16 @@
         </footer>
     </div>
 
-    <!-- Load jQuery 3.3.0 -->
-    <script src="https://code.jquery.com/jquery-3.3.0.min.js"></script>
-    <!-- Load tether 1.4.0 -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
-    <!-- Load Bootstrap 4.0 -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
-    <!-- Bootstrap sliders 10.0.0 -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.0.0/bootstrap-slider.min.js"></script>
-    <!-- Toast notifications v2.1.3 -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+    <!-- Load jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo" crossorigin="anonymous"></script>
+    <!-- Load tether -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.7/js/tether.min.js" integrity="sha512-X7kCKQJMwapt5FCOl2+ilyuHJp+6ISxFTVrx+nkrhgplZozodT9taV2GuGHxBgKKpOJZ4je77OuPooJg9FJLvw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Load Bootstrap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.8/js/bootstrap.min.js" integrity="sha512-nKXmKvJyiGQy343jatQlzDprflyB5c+tKCzGP3Uq67v+lmzfnZUi/ZT+fc6ITZfSC5HhaBKUIvr/nTLCV+7F+Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Bootstrap sliders -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-sliders/1.0.1/bootstrap-slider.min.css" integrity="sha512-YE4ntZgHu6nnEp3CzcxwP07khLufHMwLthDhSd4SJQI2xhsdWjjjpCY7wF8e0eKhdGO6i0o1YVxZd6f1z4zN+Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Toast notifications -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.4/toastr.min.js" integrity="sha512-lbwH47l/tPXJYG9AcFNoJaTMhGvYWhVM9YI43CT+uteTRRaiLCui8snIgyAN8XWgNjNhCqlAUdzZptso6OCoFQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- Clusterize -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/clusterize.js/0.18.0/clusterize.min.js"></script>
     <!-- Load the player config file -->

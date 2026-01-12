@@ -1285,51 +1285,98 @@ $(function () {
 
         if (isDark) {
             // select2.
-            head.append($('<link/>', {
+            /*head.append($('<link/>', {
                 'rel': 'stylesheet',
-                'href': 'vendors/select2/select2.dark.min.css'
-            }));
+                'href': '/common/css/select2.dark.min.css'
+            }));*/
+
+            /*head.append($('<link/>', {
+                'rel': 'stylesheet',
+                'href': 'https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css',
+                'integrity': 'sha512-nMNlpuaDPrqlEls3IX/Q56H36qvBASwb3ipuo3MxeWbsQB1881ox0cRv7UPTgBlriqoynt35KjEwgGUeUXIPnw==',
+                'crossorigin': 'anonymous',
+                'referrerpolicy': 'no-referrer'
+            }));*/
 
             // AdminLTE.
-            head.append($('<link/>', {
+            /*head.append($('<link/>', {
                 'rel': 'stylesheet',
-                'href': 'vendors/adminlte/css/AdminLTE.dark.min.css'
-            }));
+                'href': '/common/css/AdminLTE.dark.min.css'
+            }));*/
+
+            // AdminLTE.
+            /*head.append($('<link/>', {
+                'rel': 'stylesheet',
+                'href': 'https://cdnjs.cloudflare.com/ajax/libs/admin-lte/2.4.18/css/AdminLTE.min.css',
+                'integrity': 'sha512-SvzDTeVjcacK3/Re22K/cLJonaRQAOv5rJ58s8A5xIxhPTZLhQH5NOg2wziR8jWI14We8HHs5jEih2OkUW5Kfw==',
+                'crossorigin': 'anonymous',
+                'referrerpolicy': 'no-referrer'
+            }));*/
 
             // skins.
-            head.append($('<link/>', {
+            /*head.append($('<link/>', {
                 'rel': 'stylesheet',
-                'href': 'vendors/adminlte/css/skins/skin-purple.dark.min.css'
-            }));
+                'href': 'https://cdnjs.cloudflare.com/ajax/libs/admin-lte/2.4.18/css/skins/skin-purple.min.css',
+                'integrity': 'sha512-tpA9URQuPiYqOoT2SchwtU/Q23iHaJPwQkzEOHBgf2QOgsQJhhOlUrEGKJJ/Oj2pELXJqULMKyDpPVB5bZBqow==',
+                'crossorigin': 'anonymous',
+                'referrerpolicy': 'no-referrer'
+            }));*/
+
+            // skins.
+            /*head.append($('<link/>', {
+                'rel': 'stylesheet',
+                'href': '/common/css/skin-purple.dark.min.css'
+            }));*/
+
+            // Main CSS
+            /*head.append($('<link/>', {
+                'rel': 'stylesheet',
+                'href': 'css/main.min.css'
+            }));*/
 
             // AdminLTE.
             head.append($('<link/>', {
                 'rel': 'stylesheet',
-                'href': 'css/style.dark.min.css'
-            }));
+                'href': '../common/css/style.dark.min.css'
+            }));            
         } else {
             // select2.
-            head.append($('<link/>', {
+            /*head.append($('<link/>', {
                 'rel': 'stylesheet',
-                'href': 'vendors/select2/select2.min.css'
+                'href': 'https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css',
+                'integrity': 'sha512-nMNlpuaDPrqlEls3IX/Q56H36qvBASwb3ipuo3MxeWbsQB1881ox0cRv7UPTgBlriqoynt35KjEwgGUeUXIPnw==',
+                'crossorigin': 'anonymous',
+                'referrerpolicy': 'no-referrer'
             }));
 
             // AdminLTE.
             head.append($('<link/>', {
                 'rel': 'stylesheet',
-                'href': 'vendors/adminlte/css/AdminLTE.min.css'
+                'href': 'https://cdnjs.cloudflare.com/ajax/libs/admin-lte/2.4.18/css/AdminLTE.min.css',
+                'integrity': 'sha512-SvzDTeVjcacK3/Re22K/cLJonaRQAOv5rJ58s8A5xIxhPTZLhQH5NOg2wziR8jWI14We8HHs5jEih2OkUW5Kfw==',
+                'crossorigin': 'anonymous',
+                'referrerpolicy': 'no-referrer'
             }));
 
             // skins.
             head.append($('<link/>', {
                 'rel': 'stylesheet',
-                'href': 'vendors/adminlte/css/skins/skin-purple.min.css'
+                'href': 'https://cdnjs.cloudflare.com/ajax/libs/admin-lte/2.4.18/css/skins/skin-purple.min.css',
+                'integrity': 'sha512-tpA9URQuPiYqOoT2SchwtU/Q23iHaJPwQkzEOHBgf2QOgsQJhhOlUrEGKJJ/Oj2pELXJqULMKyDpPVB5bZBqow==',
+                'crossorigin': 'anonymous',
+                'referrerpolicy': 'no-referrer'
             }));
+
+            // Main CSS
+            head.append($('<link/>', {
+                'rel': 'stylesheet',
+                'href': 'css/main.min.css'
+            }));*/
 
             // AdminLTE.
             head.append($('<link/>', {
                 'rel': 'stylesheet',
-                'href': 'css/style.min.css'
+                'href': '../common/css/style.min.css'
             }));
         }
     };

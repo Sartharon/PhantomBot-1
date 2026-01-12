@@ -305,6 +305,22 @@
         <antcall target="jar"/>
     </target>
 
+    <target name="copy-webressources" depends="prepare-webressources-true, prepare-webressources-false">
+    </target>
+
+    <target name="prepare-webressources-true" depends="check-compiled" if="${compiled}">
+        <echo level="info" message="Phantombot ${version} already compiled, copying webressources"/>
+        <delete dir="${version.folder}/web" />
+        <copy todir="${version.folder}/web">
+            <fileset dir="./resources\web" />
+        </copy>
+    </target>
+
+    <target name="prepare-webressources-false" depends="check-compiled" unless="${compiled}">
+        <echo level="info" message="Phantombot ${version} has not yet been compiled, compiling now"/>
+        <antcall target="jar"/>
+    </target>
+
     <target name="check-compiled">
         <available file="${version.folder}/PhantomBot.jar" property="compiled"/>
     </target>

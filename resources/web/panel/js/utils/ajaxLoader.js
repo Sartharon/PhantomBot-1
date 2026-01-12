@@ -17,6 +17,44 @@
 
 /* global Pace */
 
+/**
+ * @function dynamicMenu
+ *
+ * @author @apexcipher https://github.com/almasaeed2010/AdminLTE/issues/1482
+ */
+$.fn.dynamicMenu = function(url) {
+    $('ul.sidebar-menu a').filter(function() {
+        return this.href !== url;
+    }).parent().removeClass('active');
+
+    // for sidebar menu entirely but not cover treeview
+    $('ul.sidebar-menu a').filter(function() {
+        return this.href === url;
+    }).parent().addClass('active');
+
+    // for treeview
+    $('ul.treeview-menu a').filter(function() {
+        return this.href === url;
+    }).parentsUntil('.sidebar-menu > .treeview-menu > li').addClass('active');
+};
+
+// Enable global tooltips
+$('body').tooltip({
+    selector: '[data-toggle="tooltip"]',
+    container: 'body',
+    trigger: 'hover',
+    delay: {
+        show: 400,
+        hide: 30
+    }
+});
+
+// Set toastr options.
+toastr.options.progressBar = true;
+toastr.options.preventDuplicates = false;
+toastr.options.closeButton = true;
+toastr.options.newestOnTop = true;
+
 $(function () {
     let currentPageInfo = {
         folder: '',
@@ -85,7 +123,7 @@ $(function () {
                     $(window).scrollTop(0);
                     if (href !== undefined) {
                         // Set the current tab as active.
-                        $.fn.dinamicMenu(href);
+                        $.fn.dynamicMenu(href);
                     }
                     helpers.log('Completed ajax request for page: ' + folder + '/' + page, helpers.LOG_TYPE.DEBUG);
                     currentPageInfo = {

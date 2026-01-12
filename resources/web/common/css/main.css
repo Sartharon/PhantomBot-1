@@ -160,3 +160,114 @@ select {
 .control-sidebar-subheading > label:not([class]) {
     font-weight: unset;
 }
+
+.pretty .state label:after,
+.pretty .state label:before {
+	content: '';
+	width: calc(1em + 2px);
+	height: calc(1em + 2px);
+	display: block;
+	box-sizing: border-box;
+	border-radius: 0;
+	border: 1px solid #3e3d3d;
+	z-index: 0;
+	position: absolute;
+	left: 0;
+	top: calc((0% - (100% - 1em)) - 8%);
+	background-color: transparent
+}
+
+.pretty.p-default input:checked~.state label:after {
+	background-color: #6441a5 !important
+}
+
+.pretty.p-default:not(.p-fill) input:checked~.state.p-info-o label:after {
+	background-color: #6441a5 !important
+}
+.pretty.p-toggle .state.p-success label:after {
+	background-color: #6441a5 !important
+}
+
+.pretty input:checked~.state.p-default label:after,
+.pretty.p-toggle .state.p-default label:after {
+	background-color: #6441a5 !important
+}
+
+.pretty.p-default:not(.p-fill) input:checked~.state.p-danger-o label:after {
+	background-color: #6441a5 !important
+}
+
+.btn-primary {
+    background-color: #6441a5 !important;
+    border-color: #6441a5 !important;
+}
+
+.btn {
+    border-radius: 0;
+    cursor: pointer;
+}
+
+.content-header>.breadcrumb>li>a {
+    color: #6441a5;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.skin-purple .main-header .navbar {
+    background-color: #6441a5;
+}
+
+.skin-purple .main-header .logo {
+    background-color: #5c3c96;
+}
+
+.skin-purple .sidebar-menu>li.active>a {
+    border-left-color: #6441a5;
+}
+
+.content-header>.breadcrumb>li>a {
+    color: #6441a5;
+}
+
+.bg-purple {
+    background-color: #6441a5 !important;
+}
+
+a:active, a:focus, a:hover {
+    color: #734eb9;
+}
+
+.form-control:active,
+.form-control:focus {
+    border-color: #6441a5 !important;
+    border-radius: 0;
+}
+
+a {
+    color: #6441a5;
+}
+
+.box-body,
+.box-footer,
+.box {
+    border-radius: 0;
+}
+
+.pagination > .active > a {
+    background-color: #6441a5;
+    border-color: #4b3671;
+}
+
+.modal {
+    --bs-modal-inner-border-radius: 0;
+}
+
+.modal-header {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.modal-footer {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
